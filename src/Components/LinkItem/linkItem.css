@@ -1,0 +1,53 @@
+.item {
+  margin-top: 10px;
+}
+.card {
+  display: flex;
+}
+.pointButton {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.pointNumber {
+  font-size: 20px;
+  margin-left: 12px;
+  font-weight: 600;
+}
+.pointText {
+  font-size: 10px;
+}
+.explain {
+  margin-left: 10px;
+}
+.explain span {
+  font-size: 10px;
+}
+.explain div {
+  text-align: left;
+}
+.title {
+  height: 10px;
+  font-weight: 600;
+}
+.link {
+  font-weight: 100;
+}
+.upDownVote {
+  display: flex;
+  margin-top: 10px;
+}
+.downVote {
+  margin-left: 20px;
+}
+.card .xImage {
+  display: none;
+  width: 10px;
+  height: 10px;
+}
+.card:hover .xImage {
+  display: block;
+  width: 10px;
+  height: 10px;
+}

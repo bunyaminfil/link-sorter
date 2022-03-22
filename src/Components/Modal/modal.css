@@ -1,0 +1,83 @@
+.modal__wrap {
+  position: fixed;
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  overflow-x: hidden;
+  background-color: rgba(31, 32, 41, 0.75);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 250ms 700ms ease;
+}
+
+.visible {
+  pointer-events: auto;
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+}
+
+.modal {
+  overflow-x: hidden;
+  position: relative;
+  display: block;
+  width: 30vw;
+  height: 25%;
+  min-height: 150px;
+  min-width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  align-self: center;
+  box-shadow: 0 12px 25px 0 rgba(199, 175, 189, 0.25);
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 250ms 250ms ease, transform 300ms 250ms ease;
+  transform: scale(0);
+}
+
+.visible .modal {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
+  background-color: rgb(190, 190, 190);
+}
+
+.modalHeader {
+  text-align: left;
+  height: 25px;
+  padding-top: 5px;
+  background-color: #000;
+}
+.modalHeader span {
+  color: #fff;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+.modalHeader img {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50px;
+  float: right;
+  margin-right: 5px;
+}
+.deleteText h3 {
+  margin-top: -10px;
+}
+.buttons button {
+  background-color: #000;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  border-radius: 50px;
+}

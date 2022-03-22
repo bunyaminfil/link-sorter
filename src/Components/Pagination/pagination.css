@@ -1,0 +1,15 @@
+.pagination {
+  display: inline-block;
+  position: fixed;
+  bottom: 150px;
+  left: 38%;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.pagination button {
+  margin-left: 5px;
+}
